@@ -1,0 +1,24 @@
+[package]
+name = "rebox"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.11"
+dirs = "5"
+log = "0.4"
+pbr = "1"
+sha2 = "0.10"
+tar = "0.4"
+tempfile = "3"
+xz2 = "0.1"
+zstd = "0.13"
+
+[dependencies.qemu]
+version = "9.0.0-v0"
+features = ["binaries", "enable-feature-slirp", "x86_64-softmmu"]
+
+[dependencies.reqwest]
+version = "0.12.5"
+default-features = false
+features = ["blocking", "rustls-tls"]
